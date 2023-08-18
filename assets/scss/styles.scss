@@ -1121,7 +1121,7 @@ img {
 }
 
 .mobile-menu__border-top {
-  border-top: 1px solid var(--blanco);
+  border-top: 1px solid var(--blanco) !important;
 }
 
 .mobile-menu__accordian-menu button {
