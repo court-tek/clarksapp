@@ -1,17 +1,6 @@
 window.onload = () => {
 	let modalState = false;
 
-	// mobile slide menu
-	let hamburgerBtn = document.getElementsByClassName('navbar-toggler')[0];
-
-	// slide Menu
-	let mobileMenu = document.getElementsByClassName('mobile-menu')[0];
-
-	// slide Menu close button X
-	let mobileCloseBtn = document.getElementsByClassName(
-		'mobile-menu__close-btn'
-	)[0];
-
 	// phone number input modal
 	let phoneModal = document.getElementsByClassName('phone-modal')[0];
 
@@ -59,19 +48,10 @@ window.onload = () => {
 	let emailErrorMessage = document.getElementsByClassName(
 		'invalid-email-notice'
 	)[0];
-	// ------------------------------------------------------------------
-	// hamburger slide menu functionality
-	hamburgerBtn.addEventListener('click', () => {
-		mobileMenu.classList.add('mobile-menu--open');
-	});
-
-	mobileCloseBtn.addEventListener('click', () => {
-		mobileMenu.classList.remove('mobile-menu--open');
-	});
 
 	// phone modal functionality
 	let showModal = () => {
-		if (modalState === false && screen.width > 576) {
+		if (modalState === false) {
 			phoneModal.classList.add('phone-modal--visibility');
 			modalState = true;
 		}
