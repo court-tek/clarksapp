@@ -12,6 +12,9 @@ $custom-colors: (
   "soot": hsl(0, 0%, 40%)
 );
 
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='hsl(0, 0%, 52%)'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+
+$accordion-border-color: hsl(0, 0%, 26%);
 $theme-colors: map-merge($theme-colors, $custom-colors);
   
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -46,6 +49,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   --modalBackground: hsla(0, 0%, 0%, 0.7);
   --salmon: hsl(10, 100%, 80%);
   --mobileNavBg: hsl(0, 0%, 20%);
+  --greyShade: hsl(0, 0%, 26%);
+  --greyShade0: hsl(0, 0%, 52%);
   
 }
 
@@ -1072,7 +1077,6 @@ img {
   top: 0;
   right: 0;
   cursor: pointer;
-  // background-color: var(--rojo);
   z-index: 100;
     .line,
     .line::before {
@@ -1094,6 +1098,8 @@ img {
   padding: 20px;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   background-color: var(--mobileNavBg);
   z-index: 99;
@@ -1111,7 +1117,7 @@ img {
   margin: 0 15px;
 }
 .mobile-menu__login-register-btn {
-  border: 1px solid var(--blanco);
+  border: 1px solid var(--greyShade);
   background-color: var(--mobileNavBg);
   text-transform: uppercase;
   color: var(--blanco);
@@ -1121,7 +1127,7 @@ img {
 }
 
 .mobile-menu__border-top {
-  border-top: 1px solid var(--blanco) !important;
+  border-top: 1px solid var(--greyShade) !important;
 }
 
 .mobile-menu__accordian-menu button {
@@ -1147,7 +1153,7 @@ img {
   font-size: 12px;
 }
 .mobile-menu__my-account, .mobile-menu__my-account {
-  border: 1px solid var(--blanco);
+  border: 1px solid var(--greyShade);
   background-color: var(--mobileNavBg);
   text-transform: uppercase;
   color: var(--blanco);
