@@ -1067,6 +1067,13 @@ img {
   transform: translate3d(-100%, 0, 0);
 }
 
+@media screen and (min-width: 650px) {
+  .mobile-menu {
+    width: 50%;
+  }
+}
+
+
 .mobile-menu--open {
   transform: translate3d(0, 0, 0);
 }
@@ -1168,7 +1175,7 @@ img {
 
 .mobile-menu__social-icons {
   padding: 30px;
-  background-color: var(--amarillo);
+  color: var(--blanco);
 }
 
 .mobile-menu__payment-types {
@@ -1201,8 +1208,7 @@ img {
   align-items: center;
   transition: all .4s ease-in-out;
   visibility: hidden;
-  opacity: 0;
-  
+  opacity: 0; 
 }
 
 .phone-modal--visibility {
