@@ -9,13 +9,18 @@ $custom-colors: (
   "clarksgold": hsl(39, 97%, 65%),
   "blanco": hsl(0, 0, 100%),
   "charcoal": hsl(232, 6%, 25%),
-  "soot": hsl(0, 0%, 40%)
+  "soot": hsl(0, 0%, 40%),
+  "darkCharcoal": hsl(0, 0%, 16%)
 );
-
-$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='hsl(0, 0%, 52%)'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
-
-$accordion-border-color: hsl(0, 0%, 26%);
 $theme-colors: map-merge($theme-colors, $custom-colors);
+
+// accordion styles global
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='hsl(0, 0%, 52%)'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-border-color: hsl(0, 0%, 26%);
+$accordion-body-padding-y: 0;
+$accordion-body-padding-x: 0;
+$accordion-button-active-color: var(--blanco);
+
   
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
@@ -51,6 +56,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   --mobileNavBg: hsl(0, 0%, 20%);
   --greyShade: hsl(0, 0%, 26%);
   --greyShade0: hsl(0, 0%, 52%);
+  --darkCharcoal: hsl(0, 0%, 16%);
+  --#{$prefix}accordion-active-bg:
   
 }
 
@@ -1052,6 +1059,10 @@ img {
 }
 
 // mobile slide out menu
+.mobile-menu__form-btns button {
+  background-color: var(--mobileNavBg);
+}
+
 .mobile-menu {
   background-color: var(--mobileNavBg);
   display: block;
@@ -1145,6 +1156,21 @@ img {
   border-left: none;
 }
 
+.accordion-button {
+  font-size: 19px;
+}
+
+#accordionNested .accordion-button {
+  background-color: var(--darkCharcoal);
+}
+
+.accordion-body .accordion__flyout-menu-column-list-item {
+  padding: 10px 20px;
+}
+.accordion-body .accordion__flyout-menu-column-list-item a {
+  color: var(--blanco);
+  text-decoration: none;
+}
 .mobile-menu__copyright {
   padding-left: 20px;
   margin-top: 15px;
@@ -1159,10 +1185,11 @@ img {
   color: var(--blanco);
   font-size: 12px;
 }
-.mobile-menu__my-account, .mobile-menu__my-account {
+
+.nested-menu__heading, .mobile-menu__my-account {
   border: 1px solid var(--greyShade);
   background-color: var(--mobileNavBg);
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: var(--blanco);
   width: 100%;
   padding: 20px;
@@ -1170,9 +1197,15 @@ img {
   border-top: 0;
   border-right: 0;
   border-left: 0;
-  font-size: 14px;
 }
 
+.mobile-menu__my-account {
+  font-size: 19px;
+}
+
+.nested-menu__heading {
+  font-size: 19px;
+}
 .mobile-menu__social-icons {
   padding: 30px;
   color: var(--blanco);

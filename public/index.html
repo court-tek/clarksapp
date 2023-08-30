@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Gulp Kit</title>
+    <title>Clarks</title>
     <meta property="og:title" content="CodingPhase - Learn To Code and Get Paid ASAP!">
     <meta name="description" content="Learn how to code from the best platform by building real projects that will help you land the dream job and get a high paying salary">
     <meta property="og:description" content="Learn how to code from the best platform by building real projects that will help you land the dream job and get a high paying salary">
@@ -1698,7 +1698,7 @@
         <div class="open accordion accordion-flush mobile-menu__accordian-menu" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <button class="accordion-button collapsed text-uppercase" style="--bs-accordion-active-bg:#333333;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                 Women
               </button>
             </h2>
@@ -1706,133 +1706,149 @@
               <div class="accordion-body">
                 <!-- heading -->
                 <div class="mobile-menu__form-btns">
-                  <button class="mobile-menu__my-account">Shop Women's</button>
+                  <button class="nested-menu__heading" style="background-color: #292929;">Shop Women's</button>
                 </div>
                 <!-- heading -->
                 <!-- inner accordion womens -->
-                <div class="accordion" id="accordionExample">
-                  <div class="accordion-item">
+                <div class="accordion"  id="accordionNested">
+                  <div class="accordion-item" style="--bs-accordion-bg:#292929;">
                     <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapse">
+                      <button class="accordion-button collapsed text-uppercase" style="--bs-accordion-active-bg:#292929; background-color: #292929;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapse">
                         Shop Featured
                       </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionNested">
                       <div class="accordion-body">
                         <ul>
-                          <li class="">New Arrivals</li>
-                          <li class="">Best Sellers</li>
-                          <li class="">Wide Fit</li>
-                          <li class="">Comfort</li>
-                          <li class="">Casual</li>
-                          <li class="">Sale</li>
+                          <li class="accordion__flyout-menu-column-list-item">
+                            <a href="/womens-new-arrivals/c/us100" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|1|New Arrivals ">New Arrivals </a>
+                          </li>
+                          <li class="accordion__flyout-menu-column-list-item">
+                            <a href="/Womens-Best-Sellers/c/us182" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|2|Best Sellers">Best Sellers</a>
+                          </li>
+                          <li class="accordion__flyout-menu-column-list-item">
+                            <a href="/womens/all-styles/c/w2?q=:relevance:width:wide&amp;sort=relevance" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|3|Wide Fit">Wide Fit</a>
+                          </li>
+                          <li class="accordion__flyout-menu-column-list-item">
+                            <a href="/featured-collection/Womens-Comfortable-Shoes/c/us98" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|4|Comfort">Comfort</a>
+                          </li>
+                          <li class="accordion__flyout-menu-column-list-item">
+                            <a href="/womens/casual-collection/c/w9" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|5|Casual">Casual</a>
+                          </li>
+                          <li class="accordion__flyout-menu-column-list-item">
+                            <a href="/shoe-sale/womens-sale/c/us68" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|6|Sale">Sale</a>
+                          </li>
                         </ul>
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
+                  <div class="accordion-item" style="--bs-accordion-bg:#292929;">
                     <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <button class="accordion-button collapsed text-uppercase"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         Shop By Style
                       </button>
                     </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionNested">
                       <div class="accordion-body">
                         <ul>
-                          <li class="new-header__flyout-menu-column-list-item">
+                          <li class="accordion__flyout-menu-column-list-item">
                             <a href="/womens-new-arrivals/c/us100" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|1|New Arrivals ">Shop All Styles</a>
                           </li>
-                          <li class="new-header__flyout-menu-column-list-item">
+                          <li class="accordion__flyout-menu-column-list-item">
                             <a href="/Womens-Best-Sellers/c/us182" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|2|Best Sellers">Dress Shoes</a>
                           </li>
-                          <li class="new-header__flyout-menu-column-list-item">
+                          <li class="accordion__flyout-menu-column-list-item">
                             <a href="/womens/all-styles/c/w2?q=:relevance:width:wide&amp;sort=relevance" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|3|Wide Fit">Sneakers</a>
                           </li>
-                          <li class="new-header__flyout-menu-column-list-item">
+                          <li class="accordion__flyout-menu-column-list-item">
                             <a href="/featured-collection/Womens-Comfortable-Shoes/c/us98" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|4|Comfort">Loafers</a>
                           </li>
-                          <li class="new-header__flyout-menu-column-list-item">
+                          <li class="accordion__flyout-menu-column-list-item">
                             <a href="/featured-collection/Womens-Comfortable-Shoes/c/us98" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|4|Comfort">Heels</a>
                           </li>
-                          <li class="new-header__flyout-menu-column-list-item">
+                          <li class="accordion__flyout-menu-column-list-item">
                             <a href="/featured-collection/Womens-Comfortable-Shoes/c/us98" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|4|Comfort">Flats</a>
                           </li>
-                          <li class="new-header__flyout-menu-column-list-item">
+                          <li class="accordion__flyout-menu-column-list-item">
                             <a href="/featured-collection/Womens-Comfortable-Shoes/c/us98" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|4|Comfort">Mary Janes</a>
                           </li>
-                          <li class="new-header__flyout-menu-column-list-item">
+                          <li class="accordion__flyout-menu-column-list-item">
                             <a href="/featured-collection/Womens-Comfortable-Shoes/c/us98" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|4|Comfort">Boots & Booties</a>
                           </li>
-                          <li class="new-header__flyout-menu-column-list-item">
+                          <li class="accordion__flyout-menu-column-list-item">
                             <a href="/featured-collection/Womens-Comfortable-Shoes/c/us98" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|4|Comfort">Slip-ons</a>
                           </li>
-                          <li class="new-header__flyout-menu-column-list-item">
+                          <li class="accordion__flyout-menu-column-list-item">
                             <a href="/featured-collection/Womens-Comfortable-Shoes/c/us98" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|4|Comfort">Clogs & Mules</a>
                           </li>
-                          <li class="new-header__flyout-menu-column-list-item">
+                          <li class="accordion__flyout-menu-column-list-item">
                             <a href="/featured-collection/Womens-Comfortable-Shoes/c/us98" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|4|Comfort">Platforms & Wedge</a>
                           </li>
-                          <li class="new-header__flyout-menu-column-list-item">
+                          <li class="accordion__flyout-menu-column-list-item">
                             <a href="/featured-collection/Womens-Comfortable-Shoes/c/us98" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|4|Comfort">Sandals & Flops</a>
                           </li>
                         </ul>
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
+                  <div class="accordion-item" style="--bs-accordion-bg:#292929;">
                     <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         Shop By Collection
                       </button>
                     </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionNested">
                       <div class="accordion-body">
                         <ul>
-                          <li class="new-header__flyout-menu-column-list-item">
+                          <li class="accordion__flyout-menu-column-list-item">
                             <a href="/womens-new-arrivals/c/us100" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|1|New Arrivals ">Torhill Collection</a>
                           </li>
-                          <li class="new-header__flyout-menu-column-list-item">
+                          <li class="accordion__flyout-menu-column-list-item">
                             <a href="/Womens-Best-Sellers/c/us182" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|2|Best Sellers">Craft Sport Sneaker Collection</a>
                           </li>  
-                          <li class="new-header__flyout-menu-column-list-item">
+                          <li class="accordion__flyout-menu-column-list-item">
                             <a href="/Womens-Best-Sellers/c/us182" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|2|Best Sellers">Clarks Pro Collection</a>
                           </li>   
-                          <li class="new-header__flyout-menu-column-list-item">
+                          <li class="accordion__flyout-menu-column-list-item">
                             <a href="/Womens-Best-Sellers/c/us182" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|2|Best Sellers">Clarks Originals</a>
                           </li>  
-                          <li class="new-header__flyout-menu-column-list-item">
+                          <li class="accordion__flyout-menu-column-list-item">
                             <a href="/Womens-Best-Sellers/c/us182" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|2|Best Sellers">Walking Shoes</a>
                           </li>  
-                          <li class="new-header__flyout-menu-column-list-item">
+                          <li class="accordion__flyout-menu-column-list-item">
                             <a href="/Womens-Best-Sellers/c/us182" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|2|Best Sellers">The Wedding Collection</a>
                           </li>  
-                          <li class="new-header__flyout-menu-column-list-item">
+                          <li class="accordion__flyout-menu-column-list-item">
                             <a href="/Womens-Best-Sellers/c/us182" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|2|Best Sellers">Beeswax Leather Collection</a>
                           </li>  
-                          <li class="new-header__flyout-menu-column-list-item">
+                          <li class="accordion__flyout-menu-column-list-item">
                             <a href="#" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|2|Best Sellers">ATL Outdoor Collection</a>
                           </li>  
-                          <li class="new-header__flyout-menu-column-list-item">
+                          <li class="accordion__flyout-menu-column-list-item">
                             <a href="#" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|2|Best Sellers">Icons Reimagined</a>
                           </li>
                         </ul>
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
+                  <div class="accordion-item" style="--bs-accordion-bg:#292929;">
                     <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        Shop By Accessories
+                      <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Shop Accessories
                       </button>
                     </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionNested">
                       <div class="accordion-body">
                         <ul>
-                          <li class="">Shop All Accessories</li>
-                          <li class="">Socks</li>
-                          <li class="">Shoe Care</li>
-                          <li class="">Slippers</li>
-                          <li class="">Sale Accessories</li>
+                          <li class="accordion__flyout-menu-column-list-item">
+                            <a href="/womens-new-arrivals/c/us100" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|1|New Arrivals ">Socks</a>
+                          </li>
+                          <li class="accordion__flyout-menu-column-list-item">
+                            <a href="/Womens-Best-Sellers/c/us182" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|2|Best Sellers">Shoe Care</a>
+                          </li>  
+                          <li class="accordion__flyout-menu-column-list-item">
+                            <a href="/Womens-Best-Sellers/c/us182" class="new-header__flyout-menu-column-list-item-link" data-tracking-event="FLYOUT|Women|SHOP FEATURED|2|Best Sellers">Slippers</a>
+                          </li>  
                         </ul>
                       </div>
                     </div>
@@ -1844,7 +1860,7 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                 Men
               </button>
             </h2>
@@ -1854,7 +1870,7 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                 Kids
               </button>
             </h2>
@@ -1864,7 +1880,7 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                 originals
               </button>
             </h2>
@@ -1874,7 +1890,7 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                 sale
               </button>
             </h2>
@@ -1884,7 +1900,7 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+              <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
                 accesories
               </button>
             </h2>
@@ -1894,7 +1910,7 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+              <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
                 sustainability
               </button>
             </h2>
@@ -1908,7 +1924,7 @@
     
         <div class="mobile-menu__form-btns">
           <button class="mobile-menu__my-account mobile-menu__border-top">my account</button>
-          <button class="mobile-menu__my-account">store locator</button>
+          <button class="mobile-menu__my-account" style="background-color:#333333;">store locator</button>
         </div>
     
         <!--  -->
@@ -1916,7 +1932,7 @@
         <div class="accordion accordion-flush mobile-menu__accordian-menu" id="accordionFlushExample-fuera">
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+              <button class="accordion-button collapsed text-uppercase text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
                 Subscribe to clarks email
               </button>
             </h2>
@@ -1963,9 +1979,9 @@
         <!--  -->
     
         <div class="mobile-menu__form-btns mobile-menu__border-top">
-          <button class="mobile-menu__my-account ">terms & conditions</button>
-          <button class="mobile-menu__my-account">privacy policy</button>
-          <button class="mobile-menu__my-account">ccpa privacy policy</button>
+          <button class="mobile-menu__my-account text-uppercase">terms & conditions</button>
+          <button class="mobile-menu__my-account text-uppercase">privacy policy</button>
+          <button class="mobile-menu__my-account text-uppercase">ccpa privacy policy</button>
         </div>
     
         <!--  -->
